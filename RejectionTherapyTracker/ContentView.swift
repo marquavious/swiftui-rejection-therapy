@@ -3,7 +3,16 @@ import SwiftUI
 struct ContentView: View {
 
     var body: some View {
-        Text("Hello World")
+        Button("REC", action: recordVocalInteraction)
+            .padding(50)
+            .background(Color.red)
+            .foregroundColor(.white)
+            .clipShape(Circle())
+            .font(.title2)
+    }
+
+    private func recordVocalInteraction() {
+        print("Recording Button Pressed")
     }
 }
 
